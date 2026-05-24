@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+  color: #242424;
+  background-color: #F7F4ED;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.nav-logo{
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 40px;
+}
+
+.nav-links{
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+    padding: 0 60px;
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+}
+
+.btn{
+    background-color: #242424;
+    color: #fff;
+    padding: 10px 15px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border-bottom: 1px solid #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #F7F4ED;
+}
+
+
+.footer{
+    padding: 26px 40px;
+    text-align: center;
+    border-top: 1px solid #000000;
+    background-color: #F7F4ED;
+}
+
+.footer-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 5px 265px 0px;
+   font-size: small;
+}
+
+
+h1{
+    font-size: 100px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-weight: lighter;
+    line-height: 0.9;
+    font-family: 'Lora', serif;
+}
+
+p{
+    font-size: 22px;
+    max-width: 600px;
+    margin-top: 65px;
+}
+
+
+body, nav {
+  font-family: 'Inter', sans-serif;
+}
+
+.lbtn {
+  background-color: #242424;
+  color: #fff;
+  padding: 12px 39px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 20px;
+  margin-top: 35px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hero h1 {
+    font-size: 40px;
+  }
+}
+
+
+html {
+  background-color: #ffffff;
+}
+
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 100px 0px 0px;
+  overflow: hidden;
+  min-height: calc(100vh - 100px);
+}
+
+.hero-content {
+  margin-left: 64px;
+  flex: 1;
+}
+
+.hero-image {
+  width: 36%;
+  height: auto;
+  display: block;
+  flex-shrink: 0;
+  align-self: flex-end;
+  margin-bottom: -75px;
+}
