@@ -1,115 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Medium &mdash; Human Stories &amp; Ideas</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sora:wght@100..800&display=swap"
-        rel="stylesheet"
-    >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medium: Read and write stories.</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.svg" type="image/x-icon">
 </head>
 <body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-logo">
+        <a href="https://medium.com">Medium</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Our Story</a></li>
+        <li><a href="#">Membership</a></li>
+        <li><a href="#">Write</a></li>
+        <li><a href="#">Sign In</a></li>
+        <li><button class="btn">Get Started</button></li>
+      </ul>
+    </nav>
+  </header>
 
- 
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <section class="hero">
+      <div class="hero-content">
+      <h1>Human <br> stories &amp; ideas</h1>
+      <p>A place to read, write, and deepen your understanding</p>
+      <button class="lbtn">Start reading</button>
+      </div>
+       <img src="medium_pic.webp" alt="Medium illustration" class="hero-image">
+    </section>
 
-
-    <header role="banner">
-        <nav class="navbar" aria-label="Primary navigation">
-            <a href="#" class="logo" aria-label="Medium — go to homepage">Medium</a>
-
-            <ul class="nav-links" id="nav-links" role="list">
-                <li><a href="#">Our story</a></li>
-                <li><a href="#">Membership</a></li>
-                <li><a href="#">Write</a></li>
-                <li><a href="#">Sign in</a></li>
-                <li>
-    
-                    <a href="#" class="btn-dark" aria-label="Get started — create a free account">Get started</a>
-                </li>
-            </ul>
-
-
-            <button
-                class="nav-toggle"
-                aria-label="Toggle navigation menu"
-                aria-expanded="false"
-                aria-controls="nav-links"
-            >
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </nav>
-    </header>
-
-    <hr class="nav-divider">
-
-
-    <main id="main-content">
-
-
-        <section class="hero-section" aria-labelledby="hero-heading">
-            <div class="hero-container">
-
-                <div class="hero-text">
-
-                    <h1 id="hero-heading">Human<br>stories &amp; ideas</h1>
-                    <p>A place to read, write, and deepen your understanding</p>
-                    <a href="#" class="btn-large" aria-label="Start reading on Medium">Start reading</a>
-                </div>
-
-
-                <div
-                    class="hero-background"
-                    role="img"
-                    aria-label="Illustration: lotus flower, moon-phase diagram, and a hand writing with a fountain pen"
-                ></div>
-
-            </div>
-        </section>
-
-    </main>
-
-    <hr class="nav-divider">
-
-
-    <footer class="footer" aria-label="Site footer">
-        <a href="#">Help</a>
-        <a href="#">Status</a>
-        <a href="#">About</a>
-        <a href="#">Careers</a>
-        <a href="#">Press</a>
-        <a href="#">Blog</a>
-        <a href="#">Privacy</a>
-        <a href="#">Rules</a>
-        <a href="#">Terms</a>
-        <a href="#">Text to speech</a>
+    <footer class="footer">
+       <ul class="footer-links">
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Status</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Rules</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Text to Speech</a></li>
+       </ul>
     </footer>
 
 
-    <script>
-        const toggle   = document.querySelector('.nav-toggle');
-        const navLinks = document.querySelector('.nav-links');
 
-        toggle.addEventListener('click', () => {
-            const isOpen = navLinks.classList.toggle('nav-open');
-            toggle.setAttribute('aria-expanded', String(isOpen));
-        });
 
-    
-        navLinks.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('nav-open');
-                toggle.setAttribute('aria-expanded', 'false');
-            });
-        });
-    </script>
+
+
+
 
 </body>
 </html>
